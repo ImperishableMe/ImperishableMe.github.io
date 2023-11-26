@@ -12,23 +12,18 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Avijit Bhattacharjee</title>
+    <title>Bishwajit Bhattacharjee</title>
   </head>
   <body>
     <main>
       <nav class="nav navbargi">
-        <a href="#" class="nav-element">Avijit Bhattacharjee</a>
+        <a href="#" class="nav-element">Bishwajit Bhattacharjee</a>
         <a href="#summary" class="nav-element">Summary</a>
         <a href="#experience" class="nav-element">Experience</a>
         <a href="#education" class="nav-element">Education</a>
-        <!--
-		<a href="#skills" class="nav-element">Skills</a>
-        <a href="#projects" class="nav-element">Projects</a>
-	    -->
         <a href="#publications" class="nav-element">Publications</a>
         <a href="#services" class="nav-element">Services</a>
         <a href="#others" class="nav-element">Others</a>
-        <!-- <a href="#contact">Contact</a> -->
       </nav>
       <section id="summary" class="section text-format container">
         <img
@@ -44,134 +39,146 @@
       </section>
 
       <section id="experience" class="section text-format container">
-        <h2>Experience</h2>
+        <h2>Professional Experience</h2>
 
-        <p><b> Software Developer </b> Aug 2022 - Present</p>
-        <a href="https://www.dyspatch.io/"> Dyspatch </a>
+        <p><b> Software Engineer </b> May 2022 - Present</p>
+        <a href="https://www.dyspatch.io/"> Optimizely </a>
 
         <ul>
           <li>
-            Upgraded Workspace access assignment to use new role-based
-            permission system
+            Developed a code deployment microservice using AWS CloudFormation,
+            AWS Codecommit, and AWS Lambda that allows customers to deploy code
+            within minutes
           </li>
           <li>
-            Implemented webhook-based custom notification system to be used with
-            Slack, Zapier
-          </li>
-        </ul>
-
-        <p><b> Intermediate Software Engineer </b> Jul 2021 - Jun 2022</p>
-        <a href="https://xgen.ai/"> XGen AI </a>
-        <ul>
-          <li>
-            Implemented custom Multi Factor Authentication using AWS Cognito
-            custom auth
+            Streamlined a framework to seamlessly incorporate custom editor
+            components within an existing editor using iframes, PostMessage,
+            MessageChannel and React unlocking limitless possibilities for
+            customers
           </li>
           <li>
-            Refactored product sync service by coordinating with stakeholders to
-            reduce human-error
+            Identified and resolved a critical performance bottleneck in a
+            priority queue implementation, leading to a 80-fold improvement in
+            benchmark results
           </li>
           <li>
-            Decoupled authentication from deprecated authentication service and
-            updated customer facing sites to use the new endpoints
+            Designed and implemented pull-based consumer support on top of an
+            existing push-based pub-sub architecture in an open-source message
+            broker in Go enabling the consumers to sustain even on event burst
+            of size 20k events/s
           </li>
           <li>
-            Designed and developed an authentication service that issues and
-            verifies access tokens
+            Replaced a synchronous pipeline with a pub/sub event bus based
+            asynchronous one that improves the service availability by over 20%
           </li>
           <li>
-            Diagnosed and fixed a critical bug which caused unintentionally
-            over-write of existing user accounts
-          </li>
-        </ul>
-
-        <p><b> Software Engineer (part-time) </b> Jan 2020 - Jun 2021</p>
-        <a href=""> Saskatchewan Education Leadership Unit </a> <br />
-        <a href="https://placement.usask.ca/">
-          <u> Placement Application </u>
-        </a>
-        <ul>
-          <li>
-            Designed & implemented a feature to enable returning interns,
-            mentors to use their previous application
-          </li>
-          <li>
-            Automated the process of rerunning matching algorithm by
-            implementing clear system matches feature which saves 45% time
-          </li>
-          <li>
-            Upgraded features like exporting, listing interns, mentors, matches
-            for admin to use MySQLinstead of previous NoSQL DB
-          </li>
-          <li>
-            Fixed a critical bug in the optimization part of matching algorithm
-            which caused some unusual matching result
-          </li>
-
-          <li>
-            Technologies : Python, Flask, mongoDB, Apache, mariaDB, Linux, Git
-          </li>
-        </ul>
-
-        <p><b> Core CS Team Member (GWF) </b> Jan 2019 - Present</p>
-
-        University of Saskatchewan <br />
-        Nutrient Application
-        <a
-          href="https://gwf.usask.ca/projects-facilities/nutrient-app.php#Overview"
-        >
-          <u> link </u>
-        </a>
-        <ul>
-          <li>
-            Developed REST API for Nutrient Application to retrieve and store
-            data in university owned database.
-          </li>
-          <li>Technologies : Python, Flask, Postgres</li>
-          <li>
-            Implemented GEO map for the website of Nutrient app which shows
-            Nitrate, Phosphate concentration at different Geo-location using the
-            data from the REST API before-mentioned.
-            <a
-              href="https://gwf.usask.ca/projects-facilities/nutrient-app.php#ViewYourMeasurements"
-            >
-              <u> link </u>
-            </a>
-          </li>
-          <li>Technologies : HTML, CSS, Jquery, leafletjs</li>
-        </ul>
-
-        <p><b> Software Engineer Intern </b> Feb 2017</p>
-
-        Trustaira Bangladesh Limited
-        <ul>
-          <li>
-            Implemented a prototype in order to analyze sentiment in Bangla
-            language text written using English characters.
-            <a
-              href="https://techfoxweb.wordpress.com/2017/07/24/banglish-sentiment-analysis/"
-            >
-              <u> link </u>
-            </a>
-          </li>
-          <li>
-            Technologies : Python, pyAvroPhonetic, TextBlob, vaderSentiment
+            Technologies: AWS, Python, Go, Typescript, Javascript, React,
+            FastAPI, MySQL, Pytest, Docker, Jenkins, Redis, Celery
           </li>
         </ul>
       </section>
 
+      <section id="selected_projects" class="section text-format container">
+        <h2>Selected Projects</h2>
+        <p>
+          <b> xv6 Kernel Programming |C, Unix, File System, OS Feb. 2023 </b>
+        </p>
+        <li>
+          Increased the maximum supported file size from 268KB to 64MB by
+          introducing a doubly-indirect block number in the file inode
+        </li>
+        <li>
+          Enhanced the kernel by implementing copy-on-write (COW) support,
+          optimizing the efficiency of the fork system call and significantly
+          improving the speed of process creation •Developed lazy-allocation
+          support for user space heap memory, reducing the amortized cost of
+          large heap allocations and enhancing overall performance
+        </li>
+
+        <li>
+          Implemented a new system call pgaccess to expose page access
+          information, enabling programs like garbage collectors to make
+          intelligent decisions
+        </li>
+
+        <p><b> Distributed Systems |Go, Raft, MapReduce March 2022 </b></p>
+        <li>
+          Implemented a map-reduce system for the distributed word counting
+          problem
+        </li>
+        <li>
+          Implemented a non-byzantine fault-tolerant distributed consensus
+          algorithm named Raft in Go
+        </li>
+        <li>
+          Designed and implemented a strongly consistent, partition-tolerant
+          distributed key-value system on top of Raft consensus protocol that
+          supports log compaction
+        </li>
+        <li>
+          Applied structured logging to debug in a distributed environment and
+          used Go concurrency privileges such as goroutines, channels, condition
+          variables
+        </li>
+
+        <p>
+          <b>
+            University Institutional Information System |NodeJS, Express,
+            MongoDB, VueJS July 2021
+          </b>
+        </p>
+        <li>
+          Designed and implemented a role based access control system with fine
+          granularity
+        </li>
+        <li>
+          Integrated a third party payment gateway service to help the students
+          pay their dues
+        </li>
+        <li>
+          Incorporated multiple periodical batch processes to handle semester
+          fees and dues
+        </li>
+
+        <b> <p>Pocwha OJ |Python, Django, Bootstrap April 2019</p> </b>
+
+        <li>
+          Added the functionality of adding new problems to the existing
+          collection
+        </li>
+
+        <li>
+          Designed and implemented a feature to run the user submissions in a
+          resource (time, memory) limited execution environment and upon
+          completion of execution, report resource consumption back to the user
+        </li>
+
+        <li>
+          Decoupled user-submitted code execution from the request-response
+          cycle using an asynchronous task queue to minimize response time
+        </li>
+      </section>
       <section id="education" class="section text-format container">
         <h2>Education</h2>
 
-        <p><b> University of Saskatchewan </b> 2021</p>
+        <p>
+          <b> Bangladesh University of Engineering & Technology (BUET) </b> Feb.
+          2017 – May 2022
+        </p>
         <ul>
-          <li>M.Sc. in Computer Science (Software Engineering)</li>
+          <li>CGPA: 3.75/4.0</li>
+          <li>Final Two-year CGPA: 3.98/4.0</li>
+          <li>Major CGPA: 3.91/4.0</li>
+          <li>
+            Thesis: Fault-tolerant and Elastic Network Function State
+            Management, Supervised by: Dr. Rezwana Reaz
+          </li>
+          <li>
+            Represented university in several national programming competitions,
+            consistently securing positions within the top 8%
+          </li>
         </ul>
-        <p><b> Khulna University </b> 2018</p>
 
-        <ul>
-          <li>B.Sc. in Computer Science & Engineering</li>
-        </ul>
       </section>
 
       <section id="publications" class="section text-format container">
